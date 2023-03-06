@@ -1,21 +1,27 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-
-
+import type { NextPage } from "next";
+import Head from "next/head";
+import Header from "../components/Header";
 
 const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Next</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Mykhailo Hordiienko</title>
+        <link
+          rel="icon"
+          href="/favicon.ico"
+        />
       </Head>
-
-      
-        <h1 className='text-red-500' >Hi sdkjfhsdkhfkjsdhfkhsdkjfkjsdhfkjsd</h1>
-     
+      <Header />
+      {/* hero */}
+      <section id="hero"></section>
+      {/* about */}
+      {/* experience */}
+      {/* skills */}
+      {/* projects */}
+      {/* contact me */}
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
