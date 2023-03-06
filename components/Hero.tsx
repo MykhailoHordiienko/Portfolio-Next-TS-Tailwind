@@ -37,7 +37,9 @@ const Hero = (props: Props) => {
           <Link href="#about">
             <button className="heroButton">About</button>
           </Link>
-          <Link href="#experience">
+          <Link
+            href="#experience"
+            className="hidden">
             <button className="heroButton">Experience</button>
           </Link>
           <Link href="#skills">
