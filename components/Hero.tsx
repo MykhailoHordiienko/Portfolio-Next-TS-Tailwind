@@ -8,7 +8,7 @@ import Link from "next/link";
 type Props = {};
 
 const Hero = (props: Props) => {
-  const [text, counter] = useTypewriter({
+  const [text] = useTypewriter({
     words: [
       "Hi, My name is MichaeL",
       "Guy-who-loves-Code.jsx",
