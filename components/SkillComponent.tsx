@@ -11,14 +11,12 @@ const SkillComponent = ({ directionLeft }: Props) => {
   return (
     <div className="group relative flex cursor-pointer">
       <motion.div
-        initial={{
-          opacity: 0,
-          x: directionLeft ? -200 : 200,
-        }}
+        initial={{ opacity: 0, x: directionLeft ? -150 : 150 }}
         transition={{ duration: 1.5 }}
-        whileInView={{ opacity: 1, x: 0 }}>
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}>
         <Image
-          className="rounded-full w-24 h-24 object-cover border border-gray-500 xl:w-32 xl:h32 filter group-hover:scale-125 transition duration-300 ease-in-out"
+          className="rounded-full w-20 h-20 md:w-24 md:h-24 object-cover border border-gray-500 xl:w-32 xl:h-32 filter group-hover:scale-125 transition duration-300 ease-in-out"
           src={img}
           alt="img"
         />

@@ -16,7 +16,7 @@ const About = (props: Props) => {
         About
       </h3>
       <motion.div
-        className="-mb-20 md:mb-0 flex-shrink-0"
+        className="-mb-36 md:mb-0 flex-shrink-0"
         initial={{
           x: -200,
           opacity: 0,
@@ -27,7 +27,7 @@ const About = (props: Props) => {
           opacity: 1,
         }}>
         <Image
-          className="w-56 rounded-full md:rounded-b-xl md:rounded-t-xl object-cover md:w-64 xl:w-[500px]"
+          className="w-36 rounded-full md:rounded-b-xl md:rounded-t-xl object-cover md:w-64 xl:w-[500px]"
           src={aboutImg}
           alt="owner img"
         />
@@ -36,7 +36,7 @@ const About = (props: Props) => {
         <h4 className="text-4xl font-semibold">
           Here is a <span className="text-[#F7AB0A]/40">little</span> background
         </h4>
-        <p>
+        <p className="text-xs md:text-xs">
           Hi! I am a Junior Full Stack Developer. Looking for an opportunity to
           start my new career in the most amazing company! I love teamwork and
           know how to interact with different people. I am punctual, devoted to
