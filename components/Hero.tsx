@@ -12,7 +12,7 @@ const Hero = (props: Props) => {
     words: [
       "Hi, My name is MichaeL",
       "Guy-who-loves-Code.jsx",
-      "< RectLovesToCodeMore />",
+      "< ReactLovesToCodeMore />",
     ],
     loop: true,
     delaySpeed: 2000,
@@ -37,9 +37,7 @@ const Hero = (props: Props) => {
           <Link href="#about">
             <button className="heroButton">About</button>
           </Link>
-          <Link
-            href="#experience"
-            className="hidden">
+          <Link href="#experience" className="hidden">
             <button className="heroButton">Experience</button>
           </Link>
           <Link href="#skills">
