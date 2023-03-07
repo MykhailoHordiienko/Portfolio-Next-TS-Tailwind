@@ -1,16 +1,19 @@
 import type { NextPage } from "next";
+import { ArrowUpCircleIcon } from "@heroicons/react/24/solid";
+
 import Head from "next/head";
-import About from "../components/About";
-import ContactMe from "../components/ContactMe";
-import Experience from "../components/Experience";
-import Header from "../components/Header";
-import Hero from "../components/Hero";
-import Projects from "../components/Projects";
-import Skills from "../components/Skills";
+import Link from "next/link";
+import About from "../components/About/About";
+import ContactMe from "../components/ContactMe/ContactMe";
+import Experience from "../components/Experience/Experience";
+import Header from "../components/Header/Header";
+import Hero from "../components/Hero/Hero";
+import Projects from "../components/Projects/Projects";
+import Skills from "../components/Skills/Skills";
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0">
+    <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-x-hidden z-0 scrollbar scrollbar-none">
       <Head>
         <title>Mykhailo Hordiienko</title>
         <link
@@ -47,6 +50,11 @@ const Home: NextPage = () => {
       <section className="snap-end">
         <ContactMe />
       </section>
+      <Link href="#hero">
+        <footer className="sticky bottom-5 w-full cursor-pointer">
+          <ArrowUpCircleIcon className="w-20 ml-auto mr-6 text-[#F7AB0A]/50 animate-pulse hover:text-[#F7AB0A] focus:text-[#F7AB0A]" />
+        </footer>
+      </Link>
     </div>
   );
 };

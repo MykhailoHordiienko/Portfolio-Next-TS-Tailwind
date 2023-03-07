@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import img from "../public/Compress.jpg";
+import img from "../../public/Compress.jpg";
 
 type Props = {
   directionLeft?: boolean;

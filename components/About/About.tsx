@@ -1,5 +1,5 @@
 import Image from "next/image";
-import aboutImg from "../public/DSC04556.jpg";
+import aboutImg from "../../public/DSC04556.jpg";
 import { motion } from "framer-motion";
 import React from "react";
 

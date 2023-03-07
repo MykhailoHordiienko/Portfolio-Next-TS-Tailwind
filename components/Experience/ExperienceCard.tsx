@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import img from "../public/Compress.jpg";
+import img from "../../public/Compress.jpg";
 import Image from "next/image";
 
 type Props = {};

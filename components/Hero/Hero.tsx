@@ -1,7 +1,7 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Image from "next/image";
-import profileImg from "../public/Compress.jpg";
+import profileImg from "../../public/Compress.jpg";
 import BackGroundCircles from "./BackGroundCircles";
 import Link from "next/link";
 
@@ -37,7 +37,9 @@ const Hero = (props: Props) => {
           <Link href="#about">
             <button className="heroButton">About</button>
           </Link>
-          <Link href="#experience" className="hidden">
+          <Link
+            href="#experience"
+            className="hidden">
             <button className="heroButton">Experience</button>
           </Link>
           <Link href="#skills">
