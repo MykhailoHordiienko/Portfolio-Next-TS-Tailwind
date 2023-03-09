@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
+import { work } from "../../helpers/work";
 import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/solid";
 
 import ExperienceCard from "./ExperienceCard";
@@ -41,10 +42,12 @@ const Experience = (props: Props) => {
       <div
         ref={scrollExp}
         className="w-full flex space-x-5 overflow-x-scroll scroll-smooth p-20 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
-        <ExperienceCard />
-        <ExperienceCard />
-        <ExperienceCard />
-        <ExperienceCard />
+        {/* {work.map((item, index) => (
+          <ExperienceCard
+            key={index}
+            work={item}
+          />
+        ))} */}
       </div>
 
       <button className="absolute -right-10">
