@@ -16,17 +16,6 @@ const Skills = (props: Props) => {
       </h3>
       <div className="grid grid-cols-3 gap-5">
         <SkillComponent />
-        <SkillComponent />
-        <SkillComponent />
-        <SkillComponent />
-        <SkillComponent />
-        <SkillComponent />
-        <SkillComponent />
-        <SkillComponent />
-        <SkillComponent />
-        <SkillComponent />
-        <SkillComponent />
-        <SkillComponent />
       </div>
     </motion.div>
   );
