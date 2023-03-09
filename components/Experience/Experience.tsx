@@ -10,10 +10,16 @@ const Experience = (props: Props) => {
   const scrollExp = useRef<HTMLDivElement>(null);
 
   const scrollRight = () => {
-    scrollExp.current!.scrollLeft = scrollExp.current!.scrollLeft + 400;
+    const clientVw = document.documentElement.clientWidth;
+
+    scrollExp.current!.scrollLeft =
+      scrollExp.current!.scrollLeft + (clientVw > 768 ? 900 : 400);
   };
   const scrollLeft = () => {
-    scrollExp.current!.scrollLeft = scrollExp.current!.scrollLeft - 400;
+    const clientVw = document.documentElement.clientWidth;
+
+    scrollExp.current!.scrollLeft =
+      scrollExp.current!.scrollLeft - (clientVw > 768 ? 900 : 400);
   };
 
   return (

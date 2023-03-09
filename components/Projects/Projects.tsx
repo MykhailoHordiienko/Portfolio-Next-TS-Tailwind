@@ -12,10 +12,15 @@ const Projects = (props: Props) => {
   const scrollProject = useRef<HTMLDivElement>(null);
 
   const scrollRight = () => {
-    scrollProject.current!.scrollLeft = scrollProject.current!.scrollLeft + 600;
+    const clientVw = document.documentElement.clientWidth;
+    scrollProject.current!.scrollLeft =
+      scrollProject.current!.scrollLeft + (clientVw > 768 ? 900 : 600);
   };
   const scrollLeft = () => {
-    scrollProject.current!.scrollLeft = scrollProject.current!.scrollLeft - 600;
+    const clientVw = document.documentElement.clientWidth;
+
+    scrollProject.current!.scrollLeft =
+      scrollProject.current!.scrollLeft - (clientVw > 768 ? 900 : 600);
   };
   return (
     <motion.div

@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import SkillComponent from "./SkillComponent";
+import ResumeComponent from "./ResumeComponent";
 
 type Props = {};
 
-const Skills = (props: Props) => {
+const Resume = (props: Props) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -12,13 +12,13 @@ const Skills = (props: Props) => {
       whileInView={{ opacity: 1 }}
       className="h-screen relative flex flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 justify-center xl:space-y-0 mx-auto items-center">
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
-        Skills
+        Resume
       </h3>
       <div className="">
-        <SkillComponent />
+        <ResumeComponent />
       </div>
     </motion.div>
   );
 };
 
-export default Skills;
+export default Resume;

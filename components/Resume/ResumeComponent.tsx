@@ -5,18 +5,17 @@ import useDownloader from "react-use-downloader";
 import Image from "next/image";
 import CV from "../../public/CV.png";
 
-const SkillComponent = () => {
-  const { size, elapsed, percentage, download, cancel, error, isInProgress } =
-    useDownloader();
+const ResumeComponent = () => {
+  const { download } = useDownloader();
   const fileDir = "/Mykhailo_Hordiienko_Front-End_Developer.pdf";
   const fileName = "Mykhailo_Hordiienko_Front-End_Developer.pdf";
   return (
-    <div className="flex flex-col gap-10">
-      <motion.div
-        initial={{ opacity: 0, x: 150 }}
-        transition={{ duration: 1.5 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}></motion.div>
+    <motion.div
+      className="flex flex-col gap-10"
+      initial={{ opacity: 0 }}
+      transition={{ duration: 1.5 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}>
       <Image
         className="w-[250px] md:w-[400px]"
         src={CV}
@@ -27,8 +26,8 @@ const SkillComponent = () => {
         className="contact-btn">
         Download
       </button>
-    </div>
+    </motion.div>
   );
 };
 
-export default SkillComponent;
+export default ResumeComponent;
