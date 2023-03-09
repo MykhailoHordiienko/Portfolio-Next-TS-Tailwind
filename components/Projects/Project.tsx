@@ -23,7 +23,7 @@ type Props = {
 
 const Project = ({ item }: Props) => {
   return (
-    <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 justify-center items-center p-20 md:p-44 h-screen">
+    <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 xl:space-y-1 justify-center items-center p-20 md:p-44 h-screen">
       <motion.div
         initial={{
           y: -200,
