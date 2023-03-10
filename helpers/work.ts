@@ -19,5 +19,11 @@ export const work = [
     title: "Student",
     company: "GoIt",
     duration: "May 2022 - March 2023 | Kyiv",
+    points: [
+      "HTML5/CSS3/SASS Responsive/Adaptive design",
+      "JavaScript, React, Next.js, Tailwind CSS, RTK, REST API, Node.js, GIT",
+      "Webpack, Parcel, Vite",
+      "Attention to detail, Teamwork, Creativity, Good communication, Googling",
+    ],
   },
 ];

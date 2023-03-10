@@ -12,7 +12,7 @@ const Hero = (props: Props) => {
     words: [
       "Hi, My name is MichaeL",
       "Guy-who-loves-Code.jsx",
-      "< ReactLovesToCodeMore />",
+      "<ReactLovesToCodeMore/>",
     ],
     loop: true,
     delaySpeed: 2000,
@@ -29,7 +29,7 @@ const Hero = (props: Props) => {
         <h1 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
           Full Stack Developer
         </h1>
-        <h2 className="text-5xl lg:text-6xl font-semibold px-10">
+        <h2 className="text-2xl lg:text-6xl font-semibold px-10">
           <span className="mr-3 break-all">{text}</span>
           <Cursor cursorColor="#F7AB0A" />
         </h2>

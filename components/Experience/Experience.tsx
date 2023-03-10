@@ -42,12 +42,12 @@ const Experience = (props: Props) => {
       <div
         ref={scrollExp}
         className="w-full flex space-x-5 overflow-x-scroll scroll-smooth p-20 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
-        {/* {work.map((item, index) => (
+        {work.map((item, index) => (
           <ExperienceCard
             key={index}
-            work={item}
+            companyWork={item}
           />
-        ))} */}
+        ))}
       </div>
 
       <button className="absolute -right-10">
