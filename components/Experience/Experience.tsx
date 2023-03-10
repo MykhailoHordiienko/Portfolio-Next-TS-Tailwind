@@ -1,13 +1,10 @@
-import React, { useRef } from "react";
+import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import { work } from "../../helpers/work";
-import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/solid";
-
+import React, { useRef } from "react";
 import ExperienceCard from "./ExperienceCard";
 
-type Props = {};
-
-const Experience = (props: Props) => {
+const Experience = () => {
   const scrollExp = useRef<HTMLDivElement>(null);
 
   const scrollRight = () => {

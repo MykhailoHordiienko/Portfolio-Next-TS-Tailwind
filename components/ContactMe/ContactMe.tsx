@@ -2,9 +2,7 @@ import React from "react";
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import ContactForm from "./ContactForm";
 
-type Props = {};
-
-const ContactMe = (props: Props) => {
+const ContactMe = () => {
   return (
     <div className="h-screen flex flex-col relative text-center md:text-left  max-w-7xl px-10 justify-evenly mx-auto items-center">
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">

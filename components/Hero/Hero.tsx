@@ -1,13 +1,11 @@
-import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import Image from "next/image";
-import profileImg from "../../public/Compress.jpg";
 import BackGroundCircles from "./BackGroundCircles";
+import Image from "next/image";
 import Link from "next/link";
+import profileImg from "../../public/Compress.jpg";
+import React from "react";
 
-type Props = {};
-
-const Hero = (props: Props) => {
+const Hero = () => {
   const [text] = useTypewriter({
     words: [
       "Hi, My name is MichaeL",

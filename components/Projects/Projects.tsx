@@ -1,14 +1,10 @@
-import React, { useRef } from "react";
-import { motion } from "framer-motion";
 import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/solid";
-
+import { motion } from "framer-motion";
+import React, { useRef } from "react";
 import { projects } from "../../helpers/projects";
-
 import Project from "./Project";
 
-type Props = {};
-
-const Projects = (props: Props) => {
+const Projects = () => {
   const scrollProject = useRef<HTMLDivElement>(null);
 
   const scrollRight = () => {

@@ -1,7 +1,6 @@
 import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 
-type Props = {};
 type Inputs = {
   name: string;
   email: string;
@@ -9,7 +8,7 @@ type Inputs = {
   message: string;
 };
 
-const ContactForm = (props: Props) => {
+const ContactForm = () => {
   const { register, handleSubmit } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
     window.location.href = `mailto:gordienkomichael191@gmail.com?subject=${formData.subject}&body=${formData.name}.  message=${formData.message}.     email=${formData.email}`;

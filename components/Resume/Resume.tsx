@@ -1,10 +1,8 @@
-import React from "react";
 import { motion } from "framer-motion";
+import React from "react";
 import ResumeComponent from "./ResumeComponent";
 
-type Props = {};
-
-const Resume = (props: Props) => {
+const Resume = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}

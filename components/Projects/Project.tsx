@@ -1,8 +1,8 @@
-import React from "react";
-import { SocialIcon } from "react-social-icons";
-import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
+import { SocialIcon } from "react-social-icons";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 type StaticImageData = {
   src: string;

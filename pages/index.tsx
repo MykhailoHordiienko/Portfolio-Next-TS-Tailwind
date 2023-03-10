@@ -1,14 +1,13 @@
-import type { NextPage } from "next";
 import { ArrowUpCircleIcon } from "@heroicons/react/24/solid";
-
-import Head from "next/head";
-import Link from "next/link";
 import About from "../components/About/About";
 import ContactMe from "../components/ContactMe/ContactMe";
 import Experience from "../components/Experience/Experience";
+import Head from "next/head";
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
+import Link from "next/link";
 import Projects from "../components/Projects/Projects";
+import type { NextPage } from "next";
 import Resume from "../components/Resume/Resume";
 
 const Home: NextPage = () => {

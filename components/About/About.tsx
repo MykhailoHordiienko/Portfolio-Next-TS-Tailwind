@@ -1,11 +1,9 @@
-import Image from "next/image";
-import aboutImg from "../../public/DSC04556.jpg";
 import { motion } from "framer-motion";
+import aboutImg from "../../public/DSC04556.jpg";
+import Image from "next/image";
 import React from "react";
 
-type Props = {};
-
-const About = (props: Props) => {
+const About = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}

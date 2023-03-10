@@ -1,9 +1,8 @@
-import React from "react";
 import { motion } from "framer-motion";
-import useDownloader from "react-use-downloader";
-
-import Image from "next/image";
 import CV from "../../public/CV.png";
+import React from "react";
+import useDownloader from "react-use-downloader";
+import Image from "next/image";
 
 const ResumeComponent = () => {
   const { download } = useDownloader();

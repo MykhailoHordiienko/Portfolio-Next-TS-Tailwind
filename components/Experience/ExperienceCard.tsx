@@ -1,7 +1,7 @@
-import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import ExperiencePoints from "./ExperiencePoints";
+import Image from "next/image";
+import React from "react";
 
 type StaticImageData = {
   src: string;
