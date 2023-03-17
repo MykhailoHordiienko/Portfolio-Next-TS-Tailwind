@@ -3,6 +3,8 @@ import proj2 from "../public/project-photo/proj-2.jpg";
 import proj3 from "../public/project-photo/proj-3.jpg";
 import proj4 from "../public/project-photo/proj-4.jpg";
 import proj5 from "../public/project-photo/proj-5.jpg";
+import news from "../public/project-photo/news-proj.jpg";
+import todo from "../public/project-photo/todo-proj.jpg";
 
 export const projects = [
   {
@@ -12,6 +14,22 @@ export const projects = [
       "Application, your personal phone book with authorization and login. App component with Public and Private routes, AuthPage page logic. Using [React, Redux, Axios, Styled Components, Webpack, Chakra-Ui]",
     git: "https://github.com/MykhailoHordiienko/goit-react-hw-08-phonebook",
     live: "https://mykhailohordiienko.github.io/goit-react-hw-08-phonebook/",
+  },
+  {
+    photo: todo,
+    title: "To Do List",
+    description:
+      "Application, your personal simple ToDo list. Using [React, Axios, TS, React-Query, mockApi, Tailwind CSS]",
+    git: "https://github.com/MykhailoHordiienko/todolist-ts-react-query-tailwind",
+    live: "https://mykhailohordiienko.github.io/todolist-ts-react-query-tailwind/",
+  },
+  {
+    photo: news,
+    title: "News App",
+    description:
+      "Application, Live News & Blog Articles. Using [Next.js 13, Axios, Tailwind CSS, TS, mediastackAPI]",
+    git: "https://github.com/MykhailoHordiienko/news-next-ts-tailwind",
+    live: "https://news-next-ts-tailwind.vercel.app//",
   },
   {
     photo: proj2,
