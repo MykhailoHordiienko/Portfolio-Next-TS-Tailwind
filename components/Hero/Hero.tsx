@@ -1,16 +1,16 @@
-import { useTypewriter, Cursor } from "react-simple-typewriter";
-import BackGroundCircles from "./BackGroundCircles";
-import Image from "next/image";
-import Link from "next/link";
-import profileImg from "../../public/Compress.jpg";
-import React from "react";
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import BackGroundCircles from './BackGroundCircles';
+import Image from 'next/image';
+import Link from 'next/link';
+import profileImg from '../../public/Compress.jpg';
+import React from 'react';
 
 const Hero = () => {
   const [text] = useTypewriter({
     words: [
-      "Hi, My name is MichaeL",
-      "Guy-who-loves-Code.jsx",
-      "<ReactLovesToCodeMore/>",
+      'Hi, My name is MichaeL',
+      'Guy-who-loves-Code.jsx',
+      '<ReactLovesToCodeMore/>',
     ],
     loop: true,
     delaySpeed: 2000,
@@ -21,6 +21,7 @@ const Hero = () => {
       <Image
         className="relative rounded-full h-32 w-32 mx-auto object-cover "
         src={profileImg}
+        quality={100}
         alt="Picture of the author"
       />
       <div className="z-20">

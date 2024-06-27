@@ -1,7 +1,7 @@
-import { motion } from "framer-motion";
-import ExperiencePoints from "./ExperiencePoints";
-import Image from "next/image";
-import React from "react";
+import { motion } from 'framer-motion';
+import ExperiencePoints from './ExperiencePoints';
+import Image from 'next/image';
+import React from 'react';
 
 type StaticImageData = {
   src: string;
@@ -30,7 +30,7 @@ const ExperienceCard = ({ companyWork }: Props) => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}>
         <Image
-          className="w-24 h-24 xl:w-[200px] xl:h-[200px] rounded-3xl object-contain object-center bg-slate-200"
+          className="w-24 h-24 xl:w-[200px] xl:h-[200px] rounded-3xl object-contain object-center bg-transparent"
           src={logo}
           alt="sum img"
         />
@@ -45,10 +45,7 @@ const ExperienceCard = ({ companyWork }: Props) => {
         {points && (
           <ul className="list-disc space-y-2 ml-5 text-sm md:text-lg px-16">
             {points.map((item, index) => (
-              <ExperiencePoints
-                key={index}
-                point={item}
-              />
+              <ExperiencePoints key={index} point={item} />
             ))}
           </ul>
         )}

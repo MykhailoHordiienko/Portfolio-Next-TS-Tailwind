@@ -1,7 +1,7 @@
-import { motion } from "framer-motion";
-import aboutImg from "../../public/DSC04556.jpg";
-import Image from "next/image";
-import React from "react";
+import { motion } from 'framer-motion';
+import aboutImg from '../../public/DSC04556.jpg';
+import Image from 'next/image';
+import React from 'react';
 
 const About = () => {
   return (
@@ -35,16 +35,13 @@ const About = () => {
           Here is a <span className="text-[#F7AB0A]/40">little</span> background
         </h4>
         <p className="text-xs md:text-xs">
-          Hi! I am a Junior Full Stack Developer. Looking for an opportunity to
-          start my new career in the most amazing company! I love teamwork and
-          know how to interact with different people. I am punctual, devoted to
-          my work and my teammates. Know from real experience what a deadline
+          Hi! I am a Full Stack Developer. Looking for an opportunity to start
+          my new career in the most amazing company! I love teamwork and know
+          how to interact with different people. I am punctual, devoted to my
+          work and my teammates. Know from real experience what a deadline
           means. I am a person who can be relied upon and who will not run away
-          from difficulties. My strength is that I always achieve my goals. I
-          have sound knowledge of HTML, CSS, JavaScript, and React. Also, I have
-          hands-on experience in following Agile / Scrum methodology when
-          working in a team. I am a fast learner, responsible, and ready for
-          challenging tasks.
+          from difficulties. My strength is that I always achieve my goals. I am
+          a fast learner, responsible, and ready for challenging tasks.
         </p>
       </div>
     </motion.div>
